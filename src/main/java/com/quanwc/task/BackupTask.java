@@ -36,6 +36,7 @@ public class BackupTask {
 
     /**
      * 处理company_result表的备份数据
+     * 按小时新增备份新表、删除上一个小时的备份老表
      */
     private void dealCompanyResultBackup() {
         log.info("backup company_result begin");
@@ -64,6 +65,7 @@ public class BackupTask {
 
     /**
      * 处理subject_result表的备份数据
+     * 按小时新增备份新表、删除上一个小时的备份老表
      */
     private void dealSubjectResultBackup() {
         log.info("backup subject_result begin");
